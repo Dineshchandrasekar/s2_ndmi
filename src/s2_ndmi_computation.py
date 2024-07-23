@@ -103,11 +103,10 @@ class Sentinel2Data:
         ax.set_ylabel('')
         ax.set_xticks([])
         ax.set_yticks([])
-        plt.show()
         if png_path is not None:
             plt.savefig(png_path, bbox_inches='tight', pad_inches=0, transparent=True)
+        plt.show()
         plt.close(fig)
-        # plt.show()
         
     def process(self, date_str=None, boundary=None, png_path=None, indices='ndmi'):
         gdf= gpd.read_file(boundary) 
