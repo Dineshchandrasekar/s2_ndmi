@@ -6,7 +6,7 @@ Input
 
 
 Output
-1. PNG 
+1. PNG
 2.print mean ndmi value for given farm boundary
 
 Note : 
